@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="S_NEW_GAME">Nowa Gra</string>
+    <string name="S_END_GAME">Koniec</string>
+</resources>

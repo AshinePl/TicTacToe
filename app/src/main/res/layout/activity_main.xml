@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/BT_NEW_GAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="onNewGameClick"
+        android:text="@string/S_NEW_GAME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/BT_END"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_red_light"
+        android:onClick="onEndClick"
+        android:text="@string/S_END_GAME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BT_1"
+        style="@style/SquareStyle"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/BT_4"
+        app:layout_constraintStart_toStartOf="@+id/BT_4"/>
+
+    <Button
+        android:id="@+id/BT_2"
+        style="@style/SquareStyle"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/BT_5"
+        app:layout_constraintStart_toStartOf="@+id/BT_5"/>
+
+    <Button
+        android:id="@+id/BT_3"
+        style="@style/SquareStyle"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/BT_6"
+        app:layout_constraintStart_toStartOf="@+id/BT_6"/>
+
+    <Button
+        android:id="@+id/BT_4"
+        style="@style/SquareStyle"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/BT_5"
+        app:layout_constraintTop_toTopOf="@+id/BT_5" />
+
+    <Button
+        android:id="@+id/BT_5"
+        style="@style/SquareStyle"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BT_6"
+        style="@style/SquareStyle"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/BT_5"
+        app:layout_constraintTop_toTopOf="@+id/BT_5" />
+
+    <Button
+        android:id="@+id/BT_7"
+        style="@style/SquareStyle"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/BT_4"
+        app:layout_constraintStart_toStartOf="@+id/BT_4"/>
+
+    <Button
+        android:id="@+id/BT_8"
+        style="@style/SquareStyle"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/BT_5"
+        app:layout_constraintStart_toStartOf="@+id/BT_5"/>
+
+    <Button
+        android:id="@+id/BT_9"
+        style="@style/SquareStyle"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/BT_6"
+        app:layout_constraintStart_toStartOf="@+id/BT_6"/>
+
+    <EditText
+        android:id="@+id/ET_WIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BT_8" />
+
+</android.support.constraint.ConstraintLayout>
